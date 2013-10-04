@@ -43,11 +43,6 @@ int main()
 }
 ```
 
-``` clojure
-
-(defn hello [] (println "hello world"))
-
-```
 
 ![alt text]({{ site.url }}/assets/images/test.png)
 
