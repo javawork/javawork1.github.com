@@ -7,13 +7,16 @@ tags: [nurserymap]
 ---
 
 어린이집 데이터는 보건복지부 아이사랑 교육포털(http://www.childcare.go.kr/)에서 검색이 가능합니다.
-![alt text]({{ site.url }}/assets/images/search_nursery.png)
-![alt text]({{ site.url }}/assets/images/nursery_detail.png)
+
+### 목록보기
+![alt text]({{ site.url }}/assets/images/search_nursery1.png)
+### 상세정보
+![alt text]({{ site.url }}/assets/images/nursery_detail1.png)
 
 크롬 브라우져의 개발자 도구를 이용하면 어떻게 요청을 보내야 응답을 받을 수 있을지 알 수 있습니다.
 ![alt text]({{ site.url }}/assets/images/chrome_devmode.png)
 
-앱엔진에서는 다른 웹페이지에 요청을 보내는 방법으로 urlfetch라는 모듈을 제공합니다. 코드로 예를 들면 아래와 같습니다.
+Google App Engine에서는 다른 웹페이지에 요청을 보내는 방법으로 urlfetch라는 모듈을 제공합니다. 코드로 예를 들면 아래와 같습니다.
 
 ``` python
 result = urlfetch.fetch(
@@ -39,7 +42,7 @@ model = NurseryModel(
 model.put()
 ```
 
-전국 어린이집 데이터를 수집하기 위해서는 지역코드를 모두 파악해서 그것을 인자로 urlfetch->분석->ndb insert를 반복해야하는데, ...앱엔진의 cron job 기능을 사용합니다. cron job은 cron.yaml로 설정이 가능한데, 서버에서 특정 url을 일정 간격으로 호출해줍니다.
+전국 어린이집 데이터를 수집하기 위해서는 지역코드를 모두 파악해서 그것을 인자로 urlfetch->분석->ndb insert를 반복해야하는데, ...App Engine의 cron job 기능을 사용합니다. cron job은 cron.yaml로 설정이 가능한데, 서버에서 특정 url을 일정 간격으로 호출해줍니다.
 
 ``` yaml
 cron
