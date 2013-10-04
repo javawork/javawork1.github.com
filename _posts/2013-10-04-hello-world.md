@@ -3,7 +3,7 @@ layout: post
 title: "Hello World"
 description: ""
 category: ""
-tags: []
+tags: [javascript, google map]
 ---
 A First Level Header
 =====================
@@ -12,6 +12,7 @@ A Second Level Header
 ---------------------
 
 Now, it's time for Jekyll.
+한글도 됩니다.
 
 ### Header S
 
@@ -28,8 +29,12 @@ Now, it's time for Jekyll.
 + candy
 + pizza
 
+******
+
 - candy
 - pizza
+
+aaaa `println()`
 
 ``` c++
 int main()
@@ -53,7 +58,5 @@ marker[index] = new google.maps.Marker({
   title: data['title']
 });
 ```
-
-{% gist 6821135 %}
 
 {% include JB/setup %}
