@@ -13,10 +13,10 @@ tags: [nurserymap]
 ### 상세정보
 ![alt text]({{ site.url }}/assets/images/nursery_detail1.png)
 
-크롬 브라우져의 개발자 도구를 이용하면 어떻게 요청을 보내야 응답을 받을 수 있을지 알 수 있습니다.
+`크롬` 브라우져의 개발자 도구를 이용하면 어떻게 요청을 보내야 응답을 받을 수 있을지 알 수 있습니다.
 ![alt text]({{ site.url }}/assets/images/chrome_devmode.png)
 
-Google App Engine에서는 다른 웹페이지에 요청을 보내는 방법으로 urlfetch라는 모듈을 제공합니다. 코드로 예를 들면 아래와 같습니다.
+`Google App Engine`에서는 다른 웹페이지에 요청을 보내는 방법으로 `urlfetch`라는 모듈을 제공합니다. 코드로 예를 들면 아래와 같습니다.
 
 ``` python
 result = urlfetch.fetch(
@@ -42,7 +42,7 @@ model = NurseryModel(
 model.put()
 ```
 
-전국 어린이집 데이터를 수집하기 위해서는 지역코드를 모두 파악해서 그것을 인자로 urlfetch->분석->ndb insert를 반복해야하는데, ...App Engine의 cron job 기능을 사용합니다. cron job은 cron.yaml로 설정이 가능한데, 서버에서 특정 url을 일정 간격으로 호출해줍니다.
+전국 어린이집 데이터를 수집하기 위해서는 지역코드를 모두 파악해서 그것을 인자로 `urlfetch`->분석->`ndb` insert를 반복해야하는데, ...`App Engine`의 `cron job` 기능을 사용합니다. `cron job`은 `cron.yaml`로 설정이 가능한데, 서버에서 특정 url을 일정 간격으로 호출해줍니다.
 
 ``` yaml
 cron
@@ -52,6 +52,6 @@ cron
   timezone: Asia/Seoul
   ```
 
-아이사랑 포털에 의하면 전국에 4만1천개 정도의 어린이집이 있습니다. 데이터를 수집했으니 이제 구글맵에 보여주면 됩니다.
+아이사랑 포털에 의하면 전국에 4만1천개 정도의 어린이집이 있습니다. 데이터를 수집했으니 이제 `Google Map`에 보여주면 됩니다.
 
 {% include JB/setup %}
