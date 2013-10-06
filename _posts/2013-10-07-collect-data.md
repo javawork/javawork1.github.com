@@ -2,11 +2,11 @@
 layout: post
 title: "Collect Data"
 description: ""
-category: ""
+category: "nurserymap"
 tags: [nurserymap]
 ---
 
-어린이집 데이터는 보건복지부 아이사랑 교육포털(http://www.childcare.go.kr/)에서 검색이 가능합니다.
+어린이집 데이터는 보건복지부 [아이사랑 교육포털](http://www.childcare.go.kr/)에서 검색이 가능합니다.
 
 ### 목록보기
 ![alt text]({{ site.url }}/assets/images/search_nursery1.png)
@@ -42,7 +42,7 @@ model = NurseryModel(
 model.put()
 ```
 
-전국 어린이집 데이터를 수집하기 위해서는 지역코드를 모두 파악해서 그것을 인자로 `urlfetch`->분석->`ndb` insert를 반복해야하는데, ...`App Engine`의 `cron job` 기능을 사용합니다. `cron job`은 `cron.yaml`로 설정이 가능한데, 서버에서 특정 url을 일정 간격으로 호출해줍니다.
+전국 어린이집 데이터를 수집하기 위해서는 지역코드를 모두 파악해서 그것을 인자로 `urlfetch`로 데이터 가져오기 -> 데이터 분석 -> `ndb` insert를 반복해야합니다. `App Engine`의 `cron job`은 시간과 url을 설정해 놓으면, 서버에서 url을 일정 간격으로 호출해줍니다. `cron.yaml`로 설정이 가능합니다.
 
 ``` yaml
 cron
@@ -50,8 +50,8 @@ cron
   url: /collect/list
   schedule: every 5 minutes
   timezone: Asia/Seoul
-  ```
+```
 
-아이사랑 포털에 의하면 전국에 4만1천개 정도의 어린이집이 있습니다. 데이터를 수집했으니 이제 `Google Map`에 보여주면 됩니다.
+[아이사랑 교육포털](http://www.childcare.go.kr/)에 의하면 전국에 4만1천개 정도의 어린이집이 있습니다. 데이터를 수집했으니 이제 `Google Map`에 보여주면 됩니다.
 
 {% include JB/setup %}

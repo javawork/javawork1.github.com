@@ -2,7 +2,7 @@
 layout: post
 title: "Google Map API"
 description: ""
-category: ""
+category: "nurserymap"
 tags: [nurserymap]
 ---
 
