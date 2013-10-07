@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Google Map API"
+title: "Google Maps API"
 description: ""
 category: "nurserymap"
 tags: [nurserymap]
