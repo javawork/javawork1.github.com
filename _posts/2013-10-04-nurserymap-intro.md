@@ -14,7 +14,7 @@ tags: [nurserymap]
 
 [우리동네 어린이집](http://nurserymap.appspot.com/)
 
-`Google App Engine`의 `cron job` 기능으로 전국 데이터를 수집할 수 있었고, 새로운 기능도 추가할 수 있었습니다.
+`Google App Engine`의 `cron job` 기능으로 전국 데이터를 수집할 수 있었고, 새로운 기능도 추가할 수 있었습니다. 전체 소스코드는 [Github](https://github.com/javawork/Nurserymap_appengine)에 있습니다.
 
 `우리동네 어린이집` 서비스는 크게 2개의 부분으로 나눌 수 있습니다.  
 
