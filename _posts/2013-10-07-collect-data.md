@@ -9,9 +9,9 @@ tags: [nurserymap]
 어린이집 데이터는 보건복지부 [아이사랑 교육포털](http://www.childcare.go.kr/)에서 검색이 가능합니다.
 
 ### 목록보기
-![alt text]({{ site.url }}/assets/images/search_nursery1.png)
+![alt text]({{ site.url }}/assets/images/search_nursery.png)
 ### 상세정보
-![alt text]({{ site.url }}/assets/images/nursery_detail1.png)
+![alt text]({{ site.url }}/assets/images/nursery_detail.png)
 
 `크롬` 브라우져의 개발자 도구를 이용하면 어떻게 요청을 보내야 응답을 받을 수 있을지 알 수 있습니다.
 ![alt text]({{ site.url }}/assets/images/chrome_devmode.png)
